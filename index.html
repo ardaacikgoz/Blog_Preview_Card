@@ -5,30 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500..800;1,300..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
 
-  Learning
+    .container { 
 
-  Published 21 Dec 2023
+      
+      
+      font-size: 16px; 
+            
+      font-family: Figtree,sans-serif; 
+      
+      background-color: hsl(0, 0%, 100%);
+    
+      width: 350px;
+      
+      box-shadow: 7.5px 7.5px;
+      
+      border-radius: 3%;
 
-  HTML & CSS foundations
+      padding: 20px;
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+      border: 2px solid black; 
 
-  Greg Hooper
+    }
+
+    .container_inside{
+
+      padding: 5px;
+
+    }
+
+
+
+
+    .learning{
+
+        background-color: hsl(47, 88%, 63%);
+        border-radius: 5px;
+        padding: 5px;
+        width: 25%;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
+    .project_title{
+
+      font-weight: bold;
+      
+    }
+    
+
+    .project_title:hover{
+
+      color: hsl(47, 88%, 63%);
+
+      cursor: pointer;
+
+    }
+
+    .avatar{
+      
+      display: flex;
+
+      align-items: center;
+
+      font-weight: bold;
+
+    }
+
+    .avatar img{
+
+      margin-right: 15px;
+
+    }
+
+    .avatar2 img{
+
+      border-radius: 5%;
+
+    }
+   
+  </style>
+
+</head>
+
+<body style="background-color: hsl(47, 88%, 63%); display: flex; justify-content: center;align-items: center;min-height: 100vh;">
+  
+  <div class="container">
+
+      <div class="container_inside">
+
+      
+        <div class="avatar2">
+
+        <img src="./assets/images/illustration-article.svg" alt="image-avatar2">
+
+        </div>
+
+      
+        <p class="learning">Learning</p>
+
+        <p>Published 21 Dec 2023</p>
+      
+        <p class="project_title">HTML & CSS foundations</p>
+
+        
+      
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      
+        <div class="avatar">
+
+        <img src="./assets/images/image-avatar.webp" alt="image-avatar">
+        
+
+        <p>Greg Hooper</p>
+
+        </div>
+
+    
+
+      </div>
+
   </div>
 </body>
 </html>
+
